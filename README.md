@@ -54,7 +54,7 @@ swapCase('Tonight on XYZ-TV');      // "tONIGHT ON xyz-tv"
 ```javascript
 staggeredCase('I Love Launch School!');        // "I lOvE lAuNcH sChOoL!"
 staggeredCase('ALL CAPS');                     // "AlL cApS"
-staggeredCase('ignore 77 the 444 numbers');    // "IgNoRe 77 ThE 444 nUmBeRs"
+staggeredCase('ignore 77 the 444 numbers');    // "IgNoRe 77 ThE 444 nUmBeRs" IgNoRe 77 ThE 444 NuMbErS
 ```
 
 6. Write a function that takes a string as an argument, and returns an array that contains every word from the string, with each word followed by a space and the word's length. If the argument is an empty string or if no argument is passed, the function should return an empty array. You may assume that every pair of words in the string will be separated by a single space.
@@ -70,7 +70,7 @@ wordLengths("It ain't easy, is it?");
 // ["It 2", "ain't 5", "easy, 5", "is 2", "it? 3"]
 
 wordLengths('Supercalifragilisticexpialidocious');
-// ["Supercalifragilisticexpialidocious 34"]
+//  
 
 wordLengths('');      // []
 wordLengths();        // []
