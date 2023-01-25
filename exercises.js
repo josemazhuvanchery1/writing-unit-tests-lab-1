@@ -56,19 +56,10 @@ const wordLengths = (str) => {
 
 
 // Question 7
-const searchWord = (w, t) => {
-  //  let reg = /\w+(?=\,)/g
-  // let counter = 0;
-  // text.split(' ').forEach(element => {
-  //   console.log(element.replace(reg, 'fkajneinakenfkanwek'))
-  // });
-  let word = w.toLowerCase();
-  const text = t.toLowerCase();
-  const regex = new RegExp('\\b'+word+'\\b', "g");
-  return text.match(regex).length;
+const searchWord = (word, text) => {
+  return text.replace(/[.!?,]/ig, "").split(" ").filter(w => w.toLowerCase() === word.toLowerCase()).length
 };
-let text = 'D Smoke is humble. The Inglewood native exudes an aura of maturation, needed for his quick ascension into popular culture as the first winner of Rhythm + Flow, Netflix’s hip-hop reality competition centered on the discovery of hiphop’s next star. His signature authenticity shone throughout the 10-episode series and international audiences were drawn to his charisma as he proudly rapped about his lived experiences as a young black man in Inglewood.';
-//console.log(searchWord('hip-hop', text)); 
+
 
 
 // The code below ensures that this file can talk to our test file.
